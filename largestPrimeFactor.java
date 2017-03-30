@@ -1,4 +1,3 @@
-
 public static void largestPrimeFactor(){
  
 	//find the largest prime factor of 600851475143
@@ -27,6 +26,9 @@ public static void largestPrimeFactor(){
 			double divider = (double)num / (double)numToDivideBy;
 			if(isNumberWhole(divider)){
 				num = (long)divider;
+                                if(num == 1){
+                                    break PRIME_LOOP;
+                                }
 				continue PRIME_LOOP;
 			}
 		}
@@ -36,7 +38,7 @@ public static void largestPrimeFactor(){
 		}
 	}
 	
-	System.out.println(num);
+	System.out.println(primeNumbers.getLast());
 	
 }
 	
@@ -62,10 +64,5 @@ public static void findNextPrimeNumber(LinkedList<Integer> primeNumbers){
 }
 
 public static boolean isNumberWhole(double value){
-	return value == (int)value;
+	return value % 1 == 0;
 }
-
-
-    
-   
-
