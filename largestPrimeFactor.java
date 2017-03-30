@@ -3,7 +3,7 @@ public static void largestPrimeFactor(){
  
 	//find the largest prime factor of 600851475143
 	
-	//fine the largest prime number that can divide into the given 
+	//find the largest prime number that can divide into the given 
 	//number
 	
 	//prime numbers are divisible by themselves and 1
