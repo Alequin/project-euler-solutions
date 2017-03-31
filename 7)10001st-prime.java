@@ -1,7 +1,7 @@
 
 public static void primeNumber10001(){
 
-    //What is the 10 001st prime number?
+    //What is the 10_001st prime number?
 
     //a number is prime if it does not divide by any prime numbers
     //that come before it
